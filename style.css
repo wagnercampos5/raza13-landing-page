@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /* Em alguns momentos, será interessante usar a fonte UnifrakturMaguntia, Cinzel ou Miltonian Tattoo */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333333;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e63946;
+}
+
+.hero {
+    background-color: #1a1a1a;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: #e63946;
+    color: #ffffff;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: #c1121f;
+}
+
+.servicos {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.servicos h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card-servico {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid #2a2a2a;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card-servico h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #e63946;
+}
+
+.card-servico p {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+}
+
+.card-servico:hover {
+    transform: translateY(-5px);
+    border-color: #e63946;
+}
+
+.contato {
+    padding: 80px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contato p {
+    color: #b0b0b0;
+    margin-bottom: 40px;
+}
+
+.form-orcamento {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-orcamento input, .form-orcamento textarea {
+    width: 100%;
+    padding: 14px;
+    background-color: #242424;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    color: #f5f5f5;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-orcamento input:focus, .form-orcamento textarea:focus {
+    border-color: #e63946;
+}
+
+.btn-enviar {
+    padding: 14px;
+    background-color: #e63946;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #c1121f;
+}
+
+.rodape {
+    background-color: #0d0d0d;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #222222;
+}
+
+.rodape p {
+    color: #777777;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #e63946;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+}
