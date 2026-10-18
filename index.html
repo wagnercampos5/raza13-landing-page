@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> RAZA13 | Tattoo Studio </title>
+    <title>RAZA13 | Tattoo Studio</title>
+
+    <!-- Google Fonts: Cinzel (Títulos) e Montserrat (Textos) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,13 +18,16 @@
     <header class="hero">
         <nav class="navbar">
             <a href="#" class="logo-link">
-                <img src="assets/logo-raza13.png" alt="Logotipo com o texto RAZA13, identidade visual do estúdio de tatuagem exibida no cabeçalho do site." class="logo-img">
+                <!-- Se quiser usar o novo logo da pasta assets, troque para: assets/transparent-logo-header.png -->
+                <img src="assets/transparent-logo-header.png" alt="Logotipo RAZA13 Tattoo Studio" class="logo-img">
             </a>
             <ul class="nav-links">
-                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#servicos">Especialidades</a></li>
+                <li><a href="#galeria">Portfólio</a></li>
                 <li><a href="#orcamentos">Orçamentos</a></li>
             </ul>
         </nav>
+
         <div class="hero-content">
             <h1>Modifique seu corpo, modifique sua alma!</h1>
             <p>Especialista em tatuagens preto e branco, trabalhos coloridos e aplicações seguras de Piercings.</p>
@@ -30,14 +36,17 @@
     </header>
 
     <section id="servicos" class="servicos">
-        <h2>Especialidades do Estúdio</h2>
+        <div class="section-header">
+            <span class="subtitulo">Arte & Biossegurança</span>
+            <h2>Especialidades do Estúdio</h2>
+        </div>
         <div class="grid-servicos">
             <div class="card-servico">
                 <h3>Blackwork & Fineline</h3>
                 <p>Traços precisos, sombreamento suave e projetos exclusivos a tinta preta, pensados para a anatomia de cada cliente.</p>
             </div>
             <div class="card-servico">
-                <h3>Tatuagem colorida</h3>
+                <h3>Tatuagem Colorida</h3>
                 <p>Pigmentação intensa e duradoura com materiais de topo, desde artes neo tradicional até ilustrações vibrantes.</p>
             </div>
             <div class="card-servico">
@@ -47,8 +56,47 @@
         </div>
     </section>
 
+    <!-- NOVA SECÇÃO: GALERIA DE TRABALHOS -->
+    <section id="galeria" class="galeria">
+        <div class="section-header">
+            <span class="subtitulo">Trabalhos Realizados</span>
+            <h2>Portfólio RAZA13</h2>
+            <p class="galeria-descricao">Conheça alguns dos projetos exclusivos desenvolvidos na pele dos nossos clientes.</p>
+        </div>
+
+        <div class="grid-galeria">
+            <div class="grid-galeria">
+            <figure class="item-galeria"><img src="assets/galeria01.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 01" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria02.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 02" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria03.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 03" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria04.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 04" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria05.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 05" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria06.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 06" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria07.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 07" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria08.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 08" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria09.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 09" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria10.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 10" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria11.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 11" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria12.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 12" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria13.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria14.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 14" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria15.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 15" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria16.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 16" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria17.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 17" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria18.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 18" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria19.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 19" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria20.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 20" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria21.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 21" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria22.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 22" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria23.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 23" loading="lazy"></figure>
+        </div>
+    </section>
+
     <section id="orcamentos" class="contato">
-        <h2>Solicite seu orçamento</h2>
+        <div class="section-header">
+            <span class="subtitulo">Agende a sua Sessão</span>
+            <h2>Solicite seu Orçamento</h2>
+        </div>
         <p>Envie a sua ideia, tamanho estimado e local do corpo para receber uma proposta personalizada.</p>
         <form class="form-orcamento">
             <input type="text" placeholder="O seu nome completo" required>
@@ -61,10 +109,11 @@
     <footer class="rodape">
         <p>&copy; 2026 Raza 13 Tattoo Studio. Todos os direitos reservados.</p>
         <div class="social-links">
-            <a href="https://instagram.com/raza13" target="_blank">Instagram</a>
-            <a href="https://wa.me/5565999999999" target="_blank">Whatsapp</a>
+            <a href="https://instagram.com/raza13" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://wa.me/5565999999999" target="_blank" rel="noopener noreferrer">Whatsapp</a>
         </div>
     </footer>
 
 </body>
 </html>
+
