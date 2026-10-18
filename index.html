@@ -9,9 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome: Biblioteca de ícones oficiais (Instagram / WhatsApp) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- CSS com versão atualizada para forçar a limpeza do cache -->
-    <link rel="stylesheet" href="style.css?v=3.2">
+    <link rel="stylesheet" href="style.css?v=4.0">
 </head>
 
 <body>
@@ -19,7 +21,7 @@
     <header class="hero">
         <nav class="navbar">
             <a href="#" class="logo-link">
-                <!-- Logotipo com o texto RAZA13 -->
+                <!-- Logotipo principal no cabeçalho -->
                 <img src="assets/transparent-logo-header.png" alt="Logotipo RAZA13 Tattoo Studio" class="logo-img">
             </a>
             <ul class="nav-links">
@@ -65,31 +67,30 @@
             <p class="galeria-descricao">Conheça alguns dos projetos exclusivos desenvolvidos na pele dos nossos clientes.</p>
         </div>
 
-        <!-- Aqui estava o erro: havia duas divs "grid-galeria". Agora há apenas uma. -->
         <div class="grid-galeria">
-            <figure class="item-galeria"><img src="assets/galeria01.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 01" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria02.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 02" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria03.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 03" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria04.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 04" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria05.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 05" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria06.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 06" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria07.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 07" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria08.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 08" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria09.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 09" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria10.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 10" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria11.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 11" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria12.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 12" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria13.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 13" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria14.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 14" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria15.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 15" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria16.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 16" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria17.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 17" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria18.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 18" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria19.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 19" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria20.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 20" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria21.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 21" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria22.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 22" loading="lazy"></figure>
-            <figure class="item-galeria"><img src="assets/galeria23.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 23" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria01.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria02.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria03.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria04.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria05.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria06.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria07.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria08.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria09.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria10.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria11.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria12.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria13.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria14.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria15.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria16.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria17.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria18.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria19.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria20.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria21.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria22.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
+            <figure class="item-galeria"><img src="assets/galeria23.jpeg" alt="Tatuagem RAZA13" loading="lazy"></figure>
         </div>
     </section>
 
@@ -107,12 +108,23 @@
         </form>
     </section>
 
+    <!-- RODAPÉ ATUALIZADO: Logo, Redes Sociais e Direitos -->
     <footer class="rodape">
-        <p>&copy; 2026 Raza 13 Tattoo Studio. Todos os direitos reservados.</p>
-        <div class="social-links">
-            <a href="https://instagram.com/raza13" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://wa.me/5565999999999" target="_blank" rel="noopener noreferrer">Whatsapp</a>
+        <div class="rodape-logo">
+            <!-- Logotipo secundário no rodapé -->
+            <img src="assets/transparent-logo-footer.png" alt="Logotipo RAZA13 Tattoo Studio">
         </div>
+        
+        <div class="social-links">
+            <a href="https://instagram.com/raza13" target="_blank" rel="noopener noreferrer" aria-label="Acessar Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/556593386202" target="_blank" rel="noopener noreferrer" aria-label="Enviar mensagem no WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+        
+        <p class="direitos">&copy; 2026 Raza 13 Tattoo Studio. Todos os direitos reservados.</p>
     </footer>
 
 </body>
