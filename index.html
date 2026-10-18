@@ -33,6 +33,7 @@
 
         <div class="hero-bg">
             <div class="hero-content">
+                <h2 class="slogan">Modifique seu corpo, modifique sua alma!</h2>
                 <h1>Sua Ideia, Nossa Tinta, Uma Obra de Arte na Pele.</h1>
                 <p>Especialistas em projetos exclusivos. Dominamos as mais avançadas técnicas do mundo da tatuagem para transformar a sua visão em realidade:</p>
                 
@@ -137,10 +138,10 @@
 
             <!-- Coluna Direita: Formulário -->
             <div class="contato-form">
-                <form class="form-orcamento">
-                    <input type="text" placeholder="O seu nome completo" required>
-                    <input type="tel" placeholder="O seu Whatsapp com DDD" required>
-                    <textarea placeholder="Descreva a sua ideia de tatuagem, técnicas desejadas ou piercing aqui!" rows="5" required></textarea>
+                <form id="form-orcamento" class="form-orcamento">
+                    <input type="text" id="nome-cliente" placeholder="O seu nome completo" required>
+                    <input type="tel" id="whatsapp-cliente" placeholder="O seu Whatsapp com DDD" required>
+                    <textarea id="mensagem-cliente" placeholder="Descreva a sua ideia de tatuagem, técnicas desejadas ou piercing aqui!" rows="5" required></textarea>
                     <button type="submit" class="btn-enviar">Enviar Pedido</button>
                 </form>
             </div>
@@ -164,6 +165,60 @@
         
         <p class="direitos">&copy; 2026 Raza 13 Tattoo Studio. Todos os direitos reservados.</p>
     </footer>
+    <!-- MODAL LIGHTBOX PARA A GALERIA -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-img" id="lightboxImage" src="">
+    </div>
+<!-- Script para envio do formulário direto para o WhatsApp -->
+    <script>
+        document.getElementById('form-orcamento').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede a página de recarregar
 
+            // Captura os dados preenchidos pelo cliente
+            const nome = document.getElementById('nome-cliente').value;
+            const telefone = document.getElementById('whatsapp-cliente').value;
+            const mensagem = document.getElementById('mensagem-cliente').value;
+
+            // Formata a mensagem com negrito (*) para o WhatsApp
+            const textoMensagem = `Olá, Raza13! Meu nome é *${nome}* (Tel: ${telefone}). Gostaria de solicitar um orçamento:\n\n*Minha ideia:* ${mensagem}`;
+
+            // Converte o texto para o formato de link da internet (troca espaços por %20, etc.)
+            const textoCodificado = encodeURIComponent(textoMensagem);
+
+            // Número do estúdio
+            const numeroWhatsApp = "5565993386202";
+
+            // Cria o link da API do WhatsApp e abre numa nova aba
+            const url = `https://wa.me/${numeroWhatsApp}?text=${textoCodificado}`;
+            window.open(url, '_blank');
+        });
+
+        // --- LÓGICA DO LIGHTBOX DA GALERIA ---
+        const lightbox = document.getElementById("lightboxModal");
+        const lightboxImg = document.getElementById("lightboxImage");
+        const closeBtn = document.querySelector(".close-lightbox");
+        const galeriaImagens = document.querySelectorAll(".item-galeria img");
+
+        // Abre o lightbox ao clicar em qualquer imagem da galeria
+        galeriaImagens.forEach(img => {
+            img.addEventListener("click", function() {
+                lightbox.style.display = "flex"; // Usa flex para centralizar
+                lightboxImg.src = this.src; // Pega a mesma foto clicada
+            });
+        });
+
+        // Fecha ao clicar no 'X'
+        closeBtn.addEventListener("click", function() {
+            lightbox.style.display = "none";
+        });
+
+        // Fecha ao clicar fora da imagem (no fundo escuro)
+        lightbox.addEventListener("click", function(e) {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = "none";
+            }
+        });
+    </script>
 </body>
 </html>
