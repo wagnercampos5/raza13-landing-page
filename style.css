@@ -118,52 +118,91 @@ body {
     color: var(--accent);
 }
 
-/* Hero Section */
+/* Hero Section com Imagem de Fundo */
 .hero {
-    background: radial-gradient(circle at center, #222222 0%, #0f0f0f 100%);
-    padding-bottom: 100px;
+    background-color: var(--bg-primary);
+}
+
+.hero-bg {
+    /* Adiciona a imagem de fundo com uma máscara escura por cima para legibilidade do texto */
+    background: linear-gradient(rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.95)), 
+                url('assets/transparent-logo-hero-content.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Efeito Parallax suave */
+    padding: 100px 20px 120px;
     text-align: center;
 }
 
 .hero-content {
-    max-width: 780px;
-    margin: 80px auto 0;
-    padding: 0 20px;
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content h1 {
     font-family: var(--font-heading);
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     letter-spacing: 2px;
-    line-height: 1.25;
+    line-height: 1.3;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .hero-content p {
-    font-size: 1.1rem;
-    color: var(--text-muted);
-    margin-bottom: 35px;
+    font-size: 1.15rem;
+    color: #dddddd;
+    margin-bottom: 25px;
     font-weight: 400;
+}
+
+/* Nova Lista de Estilos do Cliente */
+.lista-estilos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 20px;
+    list-style: none;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.lista-estilos li {
+    font-size: 0.95rem;
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
 }
 
 .btn-cta {
     display: inline-block;
     background-color: var(--accent);
     color: #ffffff;
-    padding: 16px 34px;
+    padding: 18px 40px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-size: 1rem;
     border-radius: 4px;
-    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
 }
 
 .btn-cta:hover {
     background-color: var(--accent-hover);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(230, 57, 70, 0.6);
 }
 
 /* Especialidades */
