@@ -21,15 +21,12 @@ html, body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 img {
     max-width: 100%;
     height: auto;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -88,7 +85,7 @@ body {
 }
 
 .logo-img {
-    height: 100px;
+    height: 170px;
     width: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -118,19 +115,18 @@ body {
     color: var(--accent);
 }
 
-/* Hero Section com Imagem de Fundo */
+/* Hero Section */
 .hero {
     background-color: var(--bg-primary);
 }
 
 .hero-bg {
-    /* Adiciona a imagem de fundo com uma máscara escura por cima para legibilidade do texto */
     background: linear-gradient(rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.95)), 
                 url('assets/transparent-logo-hero-content.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Efeito Parallax suave */
+    background-attachment: fixed;
     padding: 100px 20px 120px;
     text-align: center;
 }
@@ -160,7 +156,6 @@ body {
     font-weight: 400;
 }
 
-/* Nova Lista de Estilos do Cliente */
 .lista-estilos {
     display: flex;
     flex-wrap: wrap;
@@ -258,6 +253,7 @@ body {
     max-width: 600px;
     margin: 15px auto 0;
     font-size: 0.95rem;
+    text-align: center;
 }
 
 .grid-galeria {
@@ -275,19 +271,18 @@ body {
     background-color: var(--bg-card);
     border: 1px solid var(--border-color);
     aspect-ratio: 4 / 5;
-    width: 100%; /* Garante que o card ocupe toda a coluna da grid */
+    width: 100%;
     cursor: pointer;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .item-galeria img {
-    width: 100% !important;  /* Força a largura total da coluna */
-    height: 100% !important; /* Preenche a altura do aspect-ratio */
+    width: 100% !important;
+    height: 100% !important;
     object-fit: cover;
     display: block;
     filter: contrast(1.05) brightness(0.92);
     transition: transform 0.5s ease, filter 0.4s ease;
-}
 }
 
 .item-galeria:hover {
@@ -300,37 +295,91 @@ body {
     filter: contrast(1.1) brightness(1.05);
 }
 
-/* Secção de Orçamentos / Contato */
+/* Secção de Orçamentos e Localização */
 .contato {
-    padding: 90px 20px;
+    padding: 90px 5%;
     background-color: var(--bg-primary);
     text-align: center;
 }
 
 .contato .section-header {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
-.contato p {
+.contato-descricao {
     color: var(--text-muted);
-    margin-bottom: 40px;
-    max-width: 550px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 600px;
+    margin: 15px auto 35px;
+    text-align: center;
+}
+
+.contato-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: stretch;
+    text-align: left; /* Garante que o interior não herde o alinhamento central */
+}
+
+.contato-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 0; /* Impede que o iframe force a largura da coluna */
+}
+
+.mapa-wrapper {
+    flex-grow: 1;
+    min-height: 350px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.info-texto h3 {
+    font-family: var(--font-heading);
+    color: var(--text-main);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-texto h3 i {
+    color: var(--accent);
+}
+
+.info-texto p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.contato-form {
+    flex: 1;
+    background-color: var(--bg-card);
+    padding: 40px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    min-width: 0; /* Evita expansão horizontal forçada */
 }
 
 .form-orcamento {
-    max-width: 520px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    height: 100%;
 }
 
 .form-orcamento input,
 .form-orcamento textarea {
     width: 100%;
-    padding: 15px;
+    padding: 16px;
     background-color: var(--bg-secondary);
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -347,22 +396,24 @@ body {
 }
 
 .btn-enviar {
-    padding: 16px;
+    margin-top: auto;
+    padding: 18px;
     background-color: var(--accent);
     color: #ffffff;
     border: none;
     border-radius: 4px;
     font-family: var(--font-body);
-    font-size: 0.95rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .btn-enviar:hover {
     background-color: var(--accent-hover);
+    transform: translateY(-2px);
 }
 
 /* Rodapé */
@@ -378,7 +429,7 @@ body {
 }
 
 .rodape-logo img {
-    height: 110px; /* Ajuste a altura do logo do rodapé se necessário */
+    height: 110px;
     width: auto;
     opacity: 0.8;
     transition: opacity 0.3s;
@@ -420,50 +471,56 @@ body {
     margin-top: 10px;
 }
 
-/* Responsividade Mobile */
+/* Responsividade Mobile e Tablets */
+@media (max-width: 950px) {
+    .contato-container {
+        flex-direction: column;
+    }
+    .mapa-wrapper {
+        min-height: 300px;
+    }
+    .contato-form {
+        padding: 30px 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         gap: 15px;
         padding: 20px 10px;
     }
-
+    .logo-img {
+        height: 120px;
+    }
     .nav-links {
         gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
         padding: 0;
     }
-
     .hero-content {
         margin-top: 30px;
         padding: 0 15px;
     }
-
     .hero-content h1 {
         font-size: 1.8rem;
     }
-
     .section-header h2 {
         font-size: 1.7rem;
     }
-
     .servicos, .galeria, .contato {
         padding: 60px 15px;
         width: 100%;
     }
-
     .grid-servicos {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
     .galeria {
         padding: 50px 16px;
         box-sizing: border-box;
     }
-
-    /* Grid da galeria dividida no meio simetricamente */
     .grid-galeria {
         display: grid;
         grid-template-columns: 1fr 1fr; 
@@ -472,20 +529,17 @@ body {
         margin: 0 auto;
         padding: 0;
     }
-
     .item-galeria {
         width: 100%;
         margin: 0;
     }
-
     .item-galeria img {
         width: 100% !important;
         height: 100% !important;
         object-fit: cover;
     }
-
     .form-orcamento {
         width: 100%;
-        padding: 0 10px;
+        padding: 0;
     }
 }

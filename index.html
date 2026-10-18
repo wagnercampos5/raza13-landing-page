@@ -106,20 +106,46 @@
         </div>
     </section>
 
+    <!-- SECÇÃO DE ORÇAMENTOS E LOCALIZAÇÃO -->
     <section id="orcamentos" class="contato">
         <div class="section-header">
             <span class="subtitulo">Agende a sua Sessão</span>
             <h2>Solicite seu Orçamento</h2>
+            <p class="contato-descricao">Envie a sua ideia, tamanho estimado e local do corpo. Visite-nos ou envie mensagem para receber uma proposta personalizada.</p>
         </div>
-        <p>Envie a sua ideia, tamanho estimado e local do corpo para receber uma proposta personalizada.</p>
-        <form class="form-orcamento">
-            <input type="text" placeholder="O seu nome completo" required>
-            <input type="tel" placeholder="O seu Whatsapp com DDD" required>
-            <textarea placeholder="Descreva a sua ideia de tatuagem ou piercing aqui!" rows="4" required></textarea>
-            <button type="submit" class="btn-enviar">Enviar Pedido</button>
-        </form>
-    </section>
 
+        <div class="contato-container">
+            <!-- Coluna Esquerda: Mapa e Info -->
+            <div class="contato-info">
+                <div class="mapa-wrapper">
+                    <!-- Iframe do Google Maps (Apontando exatamente para o RAZA13 TATTOO STUDIO) -->
+                    <iframe 
+                        src="https://maps.google.com/maps?q=RAZA13%20TATTOO%20STUDIO%20Rua%20Ary%20Paes%20Barreto%202331&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="info-texto">
+                    <h3><i class="fa-solid fa-location-dot"></i> Onde Estamos</h3>
+                    <p>Rua Ary Paes Barreto, 2331 - Cristo Rei<br>Várzea Grande - MT, 78118-090<br>Atendimento com hora marcada.</p>
+                </div>
+            </div>
+
+            <!-- Coluna Direita: Formulário -->
+            <div class="contato-form">
+                <form class="form-orcamento">
+                    <input type="text" placeholder="O seu nome completo" required>
+                    <input type="tel" placeholder="O seu Whatsapp com DDD" required>
+                    <textarea placeholder="Descreva a sua ideia de tatuagem, técnicas desejadas ou piercing aqui!" rows="5" required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Pedido</button>
+                </form>
+            </div>
+        </div>
+    </section>
     <!-- RODAPÉ ATUALIZADO: Logo, Redes Sociais e Direitos -->
     <footer class="rodape">
         <div class="rodape-logo">
