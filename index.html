@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css?v=2.2">
+    <!-- CSS com versão atualizada para forçar a limpeza do cache -->
+    <link rel="stylesheet" href="style.css?v=3.2">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     <header class="hero">
         <nav class="navbar">
             <a href="#" class="logo-link">
-                <!-- Se quiser usar o novo logo da pasta assets, troque para: assets/transparent-logo-header.png -->
+                <!-- Logotipo com o texto RAZA13 -->
                 <img src="assets/transparent-logo-header.png" alt="Logotipo RAZA13 Tattoo Studio" class="logo-img">
             </a>
             <ul class="nav-links">
@@ -56,7 +57,7 @@
         </div>
     </section>
 
-    <!-- NOVA SECÇÃO: GALERIA DE TRABALHOS -->
+    <!-- SECÇÃO: GALERIA DE TRABALHOS -->
     <section id="galeria" class="galeria">
         <div class="section-header">
             <span class="subtitulo">Trabalhos Realizados</span>
@@ -64,8 +65,8 @@
             <p class="galeria-descricao">Conheça alguns dos projetos exclusivos desenvolvidos na pele dos nossos clientes.</p>
         </div>
 
+        <!-- Aqui estava o erro: havia duas divs "grid-galeria". Agora há apenas uma. -->
         <div class="grid-galeria">
-            <div class="grid-galeria">
             <figure class="item-galeria"><img src="assets/galeria01.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 01" loading="lazy"></figure>
             <figure class="item-galeria"><img src="assets/galeria02.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 02" loading="lazy"></figure>
             <figure class="item-galeria"><img src="assets/galeria03.jpeg" alt="Tatuagem realizada no estúdio RAZA13 - Foto 03" loading="lazy"></figure>
@@ -116,4 +117,3 @@
 
 </body>
 </html>
-
