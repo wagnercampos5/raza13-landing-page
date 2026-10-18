@@ -296,6 +296,7 @@ body {
 }
 
 /* Secção de Orçamentos e Localização */
+/* Secção de Orçamentos e Localização */
 .contato {
     padding: 90px 5%;
     background-color: var(--bg-primary);
@@ -306,11 +307,26 @@ body {
     margin-bottom: 40px;
 }
 
+/* ESTILO DO NOVO AVISO DE HORÁRIO */
+.aviso-horario {
+    font-family: var(--font-heading);
+    color: var(--accent);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+.aviso-horario i {
+    margin-right: 8px;
+}
+
 .contato-descricao {
     color: var(--text-muted);
     max-width: 600px;
     margin: 15px auto 35px;
     text-align: center;
+}
 }
 
 .contato-container {
